@@ -1,0 +1,117 @@
+body {
+	
+	width : 75%;
+	background-color :lightsalmon;
+}
+img{
+		margin-left: 100px;
+		/*width:400px;*/
+		/*height:300px;  */
+		border: 1px solid black;
+}
+div.page {
+    width: 1100px;
+	
+    border: 2px gray;
+	background-color :lightsteelblue;
+	text-align:left;
+	margin-left: auto ;
+	margin-right: auto ;
+}
+header{
+	align-content: flex-start;
+}
+
+
+h1,h2,h3 {
+    color: black; 
+	margin-left: 70px; 
+}
+h4{
+	border: 1px solid black;
+}
+
+
+article{
+	margin-left: 70px;
+
+    padding: 1em;
+    overflow: hidden;
+	    font-size: 20px;
+
+}
+
+p,ol {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    color: black;
+	margin-left: 70px;
+}
+
+#b1 {
+	background-color: lightgrey; /*#4CAF50;*/
+    -moz-appearance: none;
+	-webkit-appearance: none;
+	height: 30px;
+	width: 150px;
+	left: 50%;
+	top: 80%;
+	
+	/*position: absolute;*/
+    cursor: pointer;
+}
+#b2 {
+	background-color: lightgrey; /*#4CAF50;*/
+    -moz-appearance: none;
+	-webkit-appearance: none;
+	height: 30px;
+	width: 150px;
+	right: 50%;
+	
+	top: 80%;
+	/*position: absolute;*/
+    cursor: pointer;
+}
+#start {
+background-color: lightgrey;
+-moz-appearance: none;
+-webkit-appearance: none;
+height: 30px;
+width: 200px;
+left: 50%;
+top: 70%;
+position: absolute;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.flex-container {
+
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+	
+}
+
+input {
+	background-color:lightgrey;
+	color: black;
+	margin-left: 70px;
+	border:2px solid black;
+	 font-size: 15px; 
+
+}
+strong{
+
+		color: red;
+		margin-left: 90px;
+}
+
+
+mybutton {
+	position:absolute;
+	bottom : 0;
+}
+	
