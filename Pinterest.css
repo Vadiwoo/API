@@ -1,7 +1,7 @@
 body {
 	
 	width : 75%;
-	background-color :lightsalmon;
+	background-color :white;
 }
 img{
 		margin-left: 100px;
@@ -13,7 +13,7 @@ div.page {
     width: 1800px;
 	
     border: 2px gray;
-	background-color :lightsteelblue;
+	background-color :salmon;
 	text-align:left;
 	margin-left: auto ;
 	margin-right: auto ;
