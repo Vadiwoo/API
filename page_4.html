@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+ <head >
+  <meta charset="UTF-8" http-equiv="Content-Type" content="text/html">
+  <title>PAGE2</title>
+ <link rel="stylesheet"  type="text/css" href=" ./Pinterest.css">
+        <div class="flex-container">
+<header>
+  <h1>How-To Guide: Pinterest API </h1>
+</header>
+</div>
+ <div class = "page"> 
+<h1> MAKING API CALLS WITH JAVASCRIPT</h1>
+<h2> HTTP Request Format</h2>
+<article>
+In javascript, we make HTTP request through AJAX. AJAX stands for Asynchronous Javascript and XML.
+It is the use of XMLHttpRequest object to commnicate with server-side scripts. We can send and recieve information in a variety of formats, including JSON, XML, and also text files. In this tutorial we are going to recieve information in JSON format by using GET method.
+ </article>
+<p> Here is the javascript application that use in this tutorial</p>
+<div>
+	<img src="js.jpg" alt="Error Examples" width=600px height=900px>
+</div>
+
+<p> 1.In this application we creates a new XMLHttpRequest by with line:-</p>
+
+	<p> <strong>  var request = new XMLHttpRequest();</strong> </p>
+
+<p> 2.In the next line, we specify the request type:-
+
+    <p> <strong>  request.open(requestMethod, queryURL + queryString, async);</strong> </p>
+
+<p> 3.In the next line, we specify what do we do with the responses we recieve from the request.
+
+    <p> <strong> request.addEventListener("load", function(){...});</strong> </p>
+
+<p> 3.Finally we send our request.
+
+  <p> <strong> request.send(JSON.stringify(payload));</strong> </p>
+
+
+
+
+  </head>
+
+
+	
+  
+
+	
+
+ 	<script src="Pinterest_Page3.js"></script>
+<h2> Here is s simple form that will provide us some information about an user</h2>
+ <form>
+      <fieldset>
+        <legend>User Name</legend>
+        <label for="user_name">USER NAME:</label>
+        <input type="text" name="user_name" id="user_name">
+      <input type="button" id="userSubmit" value = "Get User Description">
+      </fieldset>
+      <div id = "results">
+      <h3> <p> </p> </h3> 
+      </div>
+ 
+    </form>
+       </div>
+
+     <body>
+
+<div>
+
+<input id="b2" type="button" name="b1" value="Previous" onclick="location.href='Page_3.html'">
+<input id ="b1" type="button" name="b2" value="Next" onclick="location.href='Page_5.html'"> 
+</div>
+
+	</body>
+</html>
