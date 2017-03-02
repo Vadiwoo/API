@@ -28,7 +28,9 @@ It is the use of XMLHttpRequest object to commnicate with server-side scripts. W
 <p> 2.In the next line, we specify the request type:-
 
     <p> <strong>  request.open(requestMethod, queryURL + queryString, async);</strong> </p>
-
+  <article> We specifies<strong> true </strong>for its third parameter to indicate that the request should be handled asynchronously.
+	In this case, you receive a callback when the data has been received, which lets the browser continue to work as normal while your request is being handled.
+	 </article>
 <p> 3.In the next line, we specify what do we do with the responses we recieve from the request.
 
     <p> <strong> request.addEventListener("load", function(){...});</strong> </p>
