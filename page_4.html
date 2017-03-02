@@ -31,11 +31,18 @@ It is the use of XMLHttpRequest object to commnicate with server-side scripts. W
   <article> We specifies<strong>true</strong>for its third parameter to indicate that the request should be handled asynchronously.
 	In this case, you receive a callback when the data has been received, which lets the browser continue to work as normal while your request is being handled.
 	 </article>
-<p> 3.In the next line, we specify what do we do with the responses we recieve from the request.
+<p> 3. In the next line, we parse the JSON data we recieved:-
+	   <p> <strong> JSON.parse(request.responseText)</strong> </p>
+	 <article>A very common use of JSON parser is to read data from a web server, and display the data in a web page.
+		 The JavaScript function JSON.parse(text) can be used to convert a JSON text into a JavaScript object
+	  </article>
+	 
+
+<p> 4.In the next line, we specify what do we do with the responses we recieve from the request.
 
     <p> <strong> request.addEventListener("load", function(){...});</strong> </p>
 
-<p> 3.Finally we send our request.
+<p> 5.Finally we send our request.
 
   <p> <strong> request.send(JSON.stringify(payload));</strong> </p>
 
@@ -52,6 +59,7 @@ It is the use of XMLHttpRequest object to commnicate with server-side scripts. W
 
  	<script src="Pinterest_Page3.js"></script>
 <h2> Here is s simple form that you can try, which will provide the information that we requested from the GET method above.</h2>
+	
  <form>
       <fieldset>
         <legend>User Name</legend>
